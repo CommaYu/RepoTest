@@ -1,0 +1,36 @@
+<ol>
+    <li>
+        <font size="12" color="white">发微信消息给好友</font>
+        <ul>
+            <li><font size="10" color="white">1)您可以通过唤醒语音助理（您好语音助理），然后说：“发微信给（好友名）”，然后在录音界面说出您想发送的内容，点击或说“发送发送”，将消息发送给好友；也可以通过“发微信给（好友名），（内容）”，来直接将消息发出。</font></li>
+            <li><font size="10" color="white">2)您也可以在任何界面，直接使用命令说“发微信给（……）”来发送消息。</font></li>
+            <li><font size="10" color="white">3)在和某位好友的对话界面，您可以直接说“发消息”，启动录音界面，发消息给此好友。</font></li>
+        </ul>
+    </li>
+    <li>
+        <font size="10" color="white">查看收到的消息</font>
+        <ul>
+            <li><font size="10" color="white">1)你可以通过唤醒语音助理，然后说“查看未读消息”，选择未读消息列表内的好友名，查看消息内容（消息内容自动语音播报）。</font></li>
+            <li><font size="10" color="white">2)你还可以通过唤醒语音助理，然后说“查看（好友名）的未读消息”，来打开此好友的未读消息。</font></li>
+        </ul>
+    </li>
+    <li>
+        <font size="10" color="white">发位置给好友</font>
+        <ul>
+            <li><font size="10" color="white">1)您可以通过唤醒语音助理，然后说“发位置给（好友名）”，将所在定位发送给此好友。</font></li>
+            <li><font size="10" color="white">2)在和某位好友的对话界面，您可以直接说“发位置”，将定位发给此好友。</font></li>
+        </ul>
+    </li>
+    <li>
+        <font size="10" color="white">接收位置导航</font>
+        <ul>
+            <li><font size="10" color="white">1)当好友将位置发给你时，您可以通过点击位置消息实现一键导航。</font></li>
+        </ul>
+    </li>
+    <li>
+         <font size="10" color="white">关闭语音提醒</font>
+         <ul>
+             <li><font size="10" color="white">1)当收到新消息，微信助手通过语音提醒是哪位好友发来的消息。此功能可在设置页面关闭。</font></li>
+         </ul>
+    </li>
+</ol>

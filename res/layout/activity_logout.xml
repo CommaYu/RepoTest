@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_logout_bg"
+    android:orientation="vertical" >
+
+	<!--退出按钮 -->
+    <Button
+        android:id="@+id/back_btn"
+        android:layout_width="@dimen/logout_cancel_btn_size"
+        android:layout_height="@dimen/logout_cancel_btn_size"
+        android:layout_margin="@dimen/logout_button_margin"
+        android:background="@mipmap/logout_dialog_closed_bg" />
+
+    <!-- 帮助按钮 -->
+    <Button
+        android:id="@+id/help_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/logout_button_margin"
+        android:layout_marginRight="@dimen/logout_button_margin"
+        android:layout_marginTop="@dimen/logout_button_margin"
+        android:background="@android:color/transparent"
+        android:text="@string/help_guidance"
+        android:textColor="@color/white"
+        android:textSize="@dimen/logout_text_size" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" 
+        >
+
+        <com.tencent.wechat.ui.widget.CircleImageView
+            android:id="@+id/user_heading_imageview"
+            android:layout_marginTop="@dimen/logout_tip_margin_top"
+            android:layout_width="@dimen/logout_headimg_width"
+            android:layout_height="@dimen/logout_headimg_height" />
+
+        <!--
+            app:civ_border_color="@color/logout_civ_border_color"
+            app:civ_border_width="@dimen/logout_civ_border"
+        -->
+
+        <TextView
+            android:id="@+id/user_name_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/logout_name_margin_bottom"
+            android:layout_marginTop="@dimen/logout_name_margin_top"
+            android:gravity="center_horizontal"
+            android:maxLines="1"
+            android:textColor="@color/white"
+            android:textSize="@dimen/logout_name_text_size" />
+
+        <View
+            android:layout_width="430dp"
+            android:layout_height="1px"
+            android:background="@color/white" />
+
+        <LinearLayout
+            android:layout_width="430dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/logout_ll_margin"
+            android:layout_marginTop="@dimen/logout_ll_margin"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/setting_notify_new_message"
+                android:textColor="@color/white"
+                android:textSize="@dimen/logout_notify_textsize" />
+
+            <CheckBox
+                android:id="@+id/is_notify_check_box"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:button="@drawable/is_notify_check_icon_selector" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="430dp"
+            android:layout_height="1px"
+            android:background="@color/white" />
+
+        <Button
+            android:id="@+id/logout_btn"
+            android:layout_width="@dimen/logout_button_width"
+            android:layout_height="@dimen/logout_button_height"
+            android:layout_marginTop="@dimen/logout_button_margin_top"
+            android:background="@mipmap/logout_btn" />
+    </LinearLayout>
+
+</RelativeLayout>

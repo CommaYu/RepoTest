@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:paddingRight="@dimen/recycleitem_message_paddingright"
+    android:gravity="center">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/item_check_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/recycleitem_message_margin"
+            android:layout_marginRight="@dimen/recycleitem_message_margin"
+            android:padding="@dimen/recycleitem_message_padding"
+            android:background="@drawable/home_round_dark_background">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <com.tencent.wechat.ui.widget.RoundedLinearLayout
+                    android:id="@+id/imageview_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/head_imageview"
+                        android:layout_width="@dimen/recycleitem_message_headimg_width"
+                        android:layout_height="@dimen/recycleitem_message_headimg_height"
+                        android:src="@mipmap/home_message_icon_normal"/>
+                </com.tencent.wechat.ui.widget.RoundedLinearLayout>
+                <ImageView
+                    android:id="@+id/notify_icon_imageview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/notify_clock"
+                    android:layout_gravity="right|bottom"/>
+
+            </FrameLayout>
+            <TextView
+                android:id="@+id/user_name_textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:gravity="center_horizontal"
+                android:textColor="@color/white"
+                android:textSize="@dimen/recycleitem_message_name_textsize"
+                android:padding="@dimen/recycleitem_message_name_padding"
+                />
+
+        </LinearLayout>
+        <View
+            android:id="@+id/new_msg_icon"
+            android:layout_width="@dimen/recycleitem_message_newmsg_width"
+            android:layout_height="@dimen/recycleitem_message_newmsg_height"
+            android:background="@mipmap/new_msg_icon"
+            android:layout_gravity="right"/>
+    </FrameLayout>
+</LinearLayout>

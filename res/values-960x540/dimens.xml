@@ -1,0 +1,11 @@
+<resources>
+
+    <dimen name="login_qvode_width">200dp</dimen>
+    <dimen name="login_qvode_height">200dp</dimen>
+    
+    <dimen name="session_send_location_width">80dp</dimen>
+    <dimen name="session_send_location_height">60dp</dimen>
+    <dimen name="session_send_message_width">80dp</dimen>
+    <dimen name="session_send_message_height">60dp</dimen>
+
+</resources>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+
+    <color name="common_bg_dark_color">#2E3238</color>
+    <color name="backColor">#2000</color>
+    <color name="common_bg_color">#201f25</color>
+    <color name="common_bg_light_color">#303039</color>
+    <color name="common_light_whilt_color">#a9a9b7</color>
+    <color name="friend_checked_bg_color">#019af0</color>
+    <color name="activity_voice_record_bg">#df020202</color>
+    <color name="activity_logout_bg">#ef020202</color>
+    <color name="circle_imageview_border">#36353B</color>
+    <color name="round_progressbar_round">#12D788</color>
+    <color name="round_progressbar_round_progress">#4D4D4D</color>
+    <color name="round_progressbar_text_color">#9A32CD</color>
+    <color name="click_to_send_text_color">#12D788</color>
+
+    <color name="session_contactinfo_bg">#1f1f25</color>
+    <color name="receive_system_text_color">#37363c</color>
+    <color name="session_message_bg">#201f25</color>
+    <color name="session_message_line_bg">#36363b</color>
+    <color name="logout_civ_border_color">#262626</color>
+    <color name="frontnotify_bg">#e5000000</color>
+
+</resources>

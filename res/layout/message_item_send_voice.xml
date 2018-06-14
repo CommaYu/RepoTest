@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_sendtime"
+            style="@style/chat_text_date_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:padding="@dimen/msgitem_myself_padding">
+
+        <com.tencent.wechat.ui.widget.RoundImageView
+            android:id="@+id/message_head_imageview"
+            android:layout_width="@dimen/msgitem_headrimg_width"
+            android:layout_height="@dimen/msgitem_headrimg_height"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/msgitem_headrimg_marginleft"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/message_voice_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/msgitem_send_voice_time_marginleft"
+            android:layout_toLeftOf="@+id/ll_send_voice"
+            android:textSize="@dimen/msgitem_send_voice_time_textsize" />
+
+        <LinearLayout
+            android:id="@+id/ll_send_voice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@+id/message_head_imageview"
+            android:background="@drawable/chatto_bg"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/msgitem_send_voice_content_paddingleft"
+            android:paddingRight="@dimen/msgitem_send_voice_content_paddingright">
+
+            <ImageView
+                android:id="@+id/message_voice_imageview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

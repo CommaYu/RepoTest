@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/notify_front_layout"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/frontnotify_bg"
+              android:gravity="center_vertical"
+              android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/notify_layout_head_imageview"
+        android:layout_width="@dimen/frontnotify_headimg_width"
+        android:layout_height="@dimen/frontnotify_headimg_height"
+        android:layout_marginLeft="@dimen/frontnotify_headimg_marginleft"/>
+
+    <TextView
+        android:id="@+id/notify_layout_content_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/frontnotify_content_marginleft"
+        android:maxLines="1"
+        android:textColor="@color/white"
+        android:textSize="@dimen/frontnotifly_content_textsize"/>
+
+</LinearLayout>

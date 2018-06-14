@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/home_friends_fragment_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingLeft="@dimen/home_friend_recycleview_padding"
+        android:paddingRight="@dimen/home_friend_recycleview_padding" />
+
+    <com.tencent.wechat.ui.widget.LetterBar
+        android:id="@+id/letter_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/home_friend_letterbar_height"
+        android:layout_marginTop="@dimen/home_friend_letterbar_margintop"/>
+
+</LinearLayout>

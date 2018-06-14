@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/session_contactinfo_bg"
+    android:gravity="bottom"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/session_titlebar_height"
+        android:layout_gravity="center_vertical" >
+
+        <ImageButton
+            android:id="@+id/back_ibtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/back" />
+
+        <!--
+             <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/session_title_marginleft"
+            android:layout_marginBottom="3dp"
+            android:layout_gravity="bottom"
+            android:text="@string/session"
+            android:textSize="27sp" />
+        -->
+
+        <TextView
+            android:id="@+id/contact_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/session_title_marginleft"
+            android:layout_marginBottom="3dp"
+            android:layout_gravity="bottom"
+            android:maxEms="9"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:text=""
+            android:textSize="@dimen/session_send_contact_name_textsize" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/ly_contactInfo"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/session_left_divider_margintop"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/session_left_padding_bottom" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <!--
+                         <TextView
+                        android:id="@+id/contact_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/session_name_margin_left"
+                        android:layout_marginTop="25dp"
+                        android:gravity="top|center_horizontal"
+                        android:maxLines="3"
+                        android:text=""
+                        android:textSize="28sp" />
+                    -->
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/session_left_group_info_height"
+                        android:layout_marginTop="@dimen/session_left_group_info_margintop" >
+
+                        <TextView
+                            android:id="@+id/group_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/session_left_group_num_marginleft"
+                            android:textSize="@dimen/session_left_group_num_textsize"
+                            android:visibility="gone" />
+
+                        <ImageView
+                            android:id="@+id/notify_flag"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/session_left_notify_flag_marginright"
+                            android:src="@mipmap/notify_clock"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <ImageButton
+                    android:id="@+id/send_location"
+                    android:layout_width="@dimen/session_send_location_width"
+                    android:layout_height="@dimen/session_send_location_height"
+                    android:layout_above="@+id/send_voice"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/send_location_bg" />
+
+                <ImageButton
+                    android:id="@+id/send_voice"
+                    android:layout_width="@dimen/session_send_message_width"
+                    android:layout_height="@dimen/session_send_message_height"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/send_message_bg" />
+
+                <View
+                    android:layout_width="@dimen/session_left_divider_width"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="2dp"
+                    android:background="@color/session_message_line_bg" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:orientation="vertical" >
+
+            <ListView
+                android:id="@+id/message_listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/session_right_list_marginbottom"
+                android:layout_marginLeft="@dimen/session_right_list_marginleft"
+                android:layout_marginRight="@dimen/session_right_list_marginright"
+                android:background="@drawable/home_round_light_background"
+                android:divider="@null"
+                android:listSelector="@android:color/transparent" />
+
+            <TextView
+                android:id="@+id/tv_unread_num"
+                android:layout_width="@dimen/session_right_unread_width"
+                android:layout_height="@dimen/session_right_unread_height"
+                android:layout_marginLeft="@dimen/session_right_unread_marginleft"
+                android:layout_marginTop="@dimen/session_right_unread_margintop"
+                android:background="@mipmap/unread_num"
+                android:gravity="center_horizontal"
+                android:paddingTop="@dimen/session_right_unread_paddingtop"
+                android:textSize="@dimen/session_right_unread_textsize"
+                android:visibility="invisible" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

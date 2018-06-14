@@ -1,0 +1,45 @@
+<resources>
+
+    <dimen name="login_qvode_width">180dp</dimen>
+    <dimen name="login_qvode_height">180dp</dimen>
+    <dimen name="logout_headimg_width">60dp</dimen>
+    <dimen name="logout_headimg_height">60dp</dimen>
+    <dimen name="logout_ll_margin">5dp</dimen>
+    <dimen name="logout_cancel_btn_size">40dp</dimen>
+    <dimen name="logout_button_width">430dp</dimen>
+    <dimen name="logout_button_height">50dp</dimen>
+    
+    <dimen name="session_send_location_width">90dp</dimen>
+    <dimen name="session_send_location_height">70dp</dimen>
+    <dimen name="session_send_message_width">90dp</dimen>
+    <dimen name="session_send_message_height">70dp</dimen>
+    <dimen name="session_send_contact_name_textsize">26sp</dimen>
+    
+    
+    <dimen name="voice_record_AnimImageView_width">120dp</dimen>
+    <dimen name="voice_record_AnimImageView_height">1200dp</dimen>
+    <dimen name="voice_record_roundProgressBar_width">140dp</dimen>
+    <dimen name="voice_record_roundProgressBar_height">140dp</dimen>
+    <dimen name="voice_record_progressbar_width">180dp</dimen>
+    <dimen name="voice_record_progressbar_height">180dp</dimen>
+    
+    <dimen name="home_left_newmsg_icon_width">18dp</dimen>
+    <dimen name="home_left_newmsg_icon_height">18dp</dimen>
+    <dimen name="home_left_newmsg_icon_marginright">20dp</dimen>
+    <dimen name="home_left_newmsg_icon_margintop">10dp</dimen>
+    
+    <dimen name="recycleitem_message_headimg_width">130dp</dimen>
+    <dimen name="recycleitem_message_headimg_height">130dp</dimen>
+    <dimen name="recycleitem_message_newmsg_width">23dp</dimen>
+    <dimen name="recycleitem_message_newmsg_height">23dp</dimen>
+    
+    <dimen name="recycleitem_friend_headimg_width">100dp</dimen>
+    <dimen name="recycleitem_friend_headimg_height">100dp</dimen>
+    
+    <dimen name="msgitem_content_textsize">16sp</dimen>
+    <dimen name="msgitem_headrimg_width">40dp</dimen>
+    <dimen name="msgitem_headrimg_height">40dp</dimen>
+    <dimen name="msgitem_headrimg_marginleft">5dp</dimen>
+    <dimen name="msgitem_receive_loc_iv_paddingleft">15dp</dimen>
+
+</resources>

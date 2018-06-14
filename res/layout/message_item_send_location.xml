@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_sendtime"
+            style="@style/chat_text_date_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:padding="@dimen/msgitem_myself_padding">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/message_head_imageview"
+            android:background="@drawable/chatto_bg"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/message_content_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left|center"
+                android:paddingLeft="@dimen/msgitem_send_loc_content_paddingleft"
+                android:paddingRight="@dimen/msgitem_send_loc_content_paddingright"
+                android:textColor="@color/black"
+                android:textSize="@dimen/msgitem_content_textsize"/>
+
+            <ImageView
+                android:id="@+id/message_text_imageview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="@dimen/msgitem_send_loc_iv_paddingleft"
+                android:scaleType="centerInside"/>
+        </LinearLayout>
+
+        <com.tencent.wechat.ui.widget.RoundImageView
+            android:id="@+id/message_head_imageview"
+            android:layout_width="@dimen/msgitem_headrimg_width"
+            android:layout_height="@dimen/msgitem_headrimg_height"
+            android:layout_marginLeft="@dimen/msgitem_headrimg_marginleft"
+            android:layout_alignParentRight="true"
+            android:scaleType="fitXY" />
+    </RelativeLayout>
+
+</LinearLayout>

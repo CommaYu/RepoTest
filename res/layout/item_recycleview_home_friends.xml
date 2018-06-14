@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="@dimen/recycleitem_friend_marginright"
+    android:layout_marginTop="@dimen/recycleitem_friend_margintop"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/item_check_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/home_round_dark_background"
+        android:orientation="vertical"
+        android:padding="@dimen/recycleitem_friend_padding">
+
+        <com.tencent.wechat.ui.widget.RoundedLinearLayout
+            android:id="@+id/imageview_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/head_imageview"
+                android:layout_width="@dimen/recycleitem_friend_headimg_width"
+                android:layout_height="@dimen/recycleitem_friend_headimg_height"
+                android:src="@mipmap/home_message_icon_normal" />
+        </com.tencent.wechat.ui.widget.RoundedLinearLayout>
+
+        <TextView
+            android:id="@+id/user_name_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:maxLines="1"
+            android:padding="@dimen/recycleitem_friend_name_padding"
+            android:textColor="@color/white"
+            android:textSize="@dimen/recycleitem_friend_name_textsize" />
+
+    </LinearLayout>
+
+</LinearLayout>

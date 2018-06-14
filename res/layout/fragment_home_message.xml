@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/home_message_fragment_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="horizontal"
+        android:scrollbarTrackHorizontal="@drawable/scrollbar_vertical_track"
+        android:scrollbarThumbHorizontal="@drawable/scrollbar_vertical_thumb"
+        android:fadeScrollbars="false"
+        android:paddingLeft="@dimen/home_message_recycleview_padding"
+        android:paddingRight="@dimen/home_message_recycleview_padding"
+        android:layout_marginBottom="@dimen/home_message_recycleview_marginbottom"/>
+
+</LinearLayout>

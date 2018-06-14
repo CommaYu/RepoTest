@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android_custom="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/voice_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_voice_record_bg" >
+
+    <RelativeLayout
+        android:id="@+id/rl_voice_record"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <RelativeLayout
+            android:id="@+id/voice_record_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <TextView
+                android:id="@+id/max_record_time_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="60dp"
+                android:layout_marginTop="10dp"
+                android:ellipsize="middle"
+                android:gravity="center"
+                android:maxLines="3"
+                android:text="@string/tip_max_record_time"
+                android:textColor="@color/common_light_whilt_color"
+                android:textSize="@dimen/voice_record_time_textsize" />
+
+            <RelativeLayout
+                android:id="@+id/rl_show_record"
+                android:layout_width="@dimen/voice_record_progressbar_width"
+                android:layout_height="@dimen/voice_record_progressbar_height"
+                android:layout_below="@+id/max_record_time_tv"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp" >
+
+                <com.tencent.wechat.ui.widget.CircleImageView
+                    android:id="@+id/user_heading_imageview"
+                    android:layout_width="@dimen/voice_record_AnimImageView_width"
+                    android:layout_height="@dimen/voice_record_AnimImageView_height"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    app:border_color="@color/circle_imageview_border"
+                    app:border_width="@dimen/voice_record_civ_border_width" />
+
+                <com.tencent.wechat.ui.widget.RoundProgressBar
+                    android:id="@+id/roundProgressBar"
+                    android:layout_width="@dimen/voice_record_roundProgressBar_width"
+                    android:layout_height="@dimen/voice_record_roundProgressBar_height"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android_custom:roundColor="@color/round_progressbar_round"
+                    android_custom:roundProgressColor="@color/round_progressbar_round_progress"
+                    android_custom:roundWidth="@dimen/voice_record_progressbar_roundwidth"
+                    android_custom:textColor="@color/round_progressbar_text_color"
+                    android_custom:textSize="@dimen/voice_record_progressbar_textsize" />
+
+                <ImageView
+                    android:id="@+id/AnimImageView"
+                    android:layout_width="@dimen/voice_record_AnimImageView_width"
+                    android:layout_height="@dimen/voice_record_AnimImageView_height"
+                    android:layout_alignStart="@+id/user_heading_imageview"
+                    android:layout_alignTop="@+id/user_heading_imageview" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/voice_record_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_show_record"
+                android:layout_centerHorizontal="true"
+                android:text="0&apos;&apos;"
+                android:textColor="@color/white"
+                android:textSize="@dimen/voice_record_recordtime_textsize" />
+
+            <!-- android:layout_marginTop="5dp" -->
+
+            <TextView
+                android:id="@+id/voice_record_send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/voice_record_time"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="@string/tip_send"
+                android:textColor="@color/click_to_send_text_color"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/voice_record_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/voice_record_send"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/voice_record_canceltv_margintop"
+                android:text="@string/tip_cancel"
+                android:textColor="@color/click_to_send_text_color"
+                android:textSize="20sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/back_btn"
+        android:layout_width="@dimen/logout_cancel_btn_size"
+        android:layout_height="@dimen/logout_cancel_btn_size"
+        android:layout_margin="@dimen/voice_record_backbtn_margin"
+        android:background="@mipmap/logout_dialog_closed_bg" />
+
+</RelativeLayout>
